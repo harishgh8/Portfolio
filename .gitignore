@@ -12,6 +12,7 @@
 /.next/
 /out/
 
+sanityio/node_modules
 # production
 /build
 
