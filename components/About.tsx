@@ -41,10 +41,10 @@ const About = ({ pageInfo }: Props) => {
         viewport={{
           once: true,
         }}
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 md:w-64 md:h-95 md:rounded-lg"
+        className="-mb-60 md:mb-0 flex-shrink-0 w-56 h-56 md:w-64 md:h-95 md:rounded-lg"
       >
         <motion.img
-          className="relative rounded-full h-32 w-32 mx-auto object-cover"
+          className="relative rounded-full h-32 w-32 md:h-[260px] md:w-[200px] mx-auto object-cover"
           src={urlFor(pageInfo?.heroImage).url()}
           alt="Picture of the author"
         />

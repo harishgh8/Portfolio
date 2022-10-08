@@ -48,24 +48,25 @@ const Projects = ({ projects }: Props) => {
               }}
               src={urlFor(project.image).url()}
               alt="project logo"
+              className="h-35 w-auto sm:h-[300px]"
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
+              <h4 className="text-2xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
-                  Case Study {i + 1} of {projects.length}:
+                  Case Study {i + 1} of {projects.length} :
                 </span>
                 {project.title}
               </h4>
-              <div className="flex items-center space-x-3 justify-center">
-                {project?.technologies.map((tech) => (
+              {/* <div className="flex items-center space-x-3 justify-center">
+                {projects.map((tech) => (
                   <motion.img
                     key={tech._id}
                     className="h-8 w-8 "
                     src={urlFor(tech.image).url()}
                   />
                 ))}
-              </div>
-              <p className="text-lg text-center mf:text-center">
+              </div> */}
+              <p className="text-md text-center mf:text-center">
                 {project.summary}
               </p>
             </div>
