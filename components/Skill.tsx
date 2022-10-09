@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Skill } from "../typings";
 import { urlFor } from "../sanity";
+import Image from "next/image";
 
 type Props = {
   directionLeft?: boolean;
@@ -11,7 +12,7 @@ type Props = {
 const Skill = ({ directionLeft, skill }: Props) => {
   return (
     <div className="group relative flex cursor-pointer">
-      <motion.img
+      <motion.div
         initial={{
           x: directionLeft ? -200 : 200,
           opacity: 0,
@@ -24,10 +25,15 @@ const Skill = ({ directionLeft, skill }: Props) => {
           x: 0,
         }}
         viewport={{ once: true }}
-        src={urlFor(skill.image).url()}
-        alt="logo"
-        className="rounded-full object-cover w-20 h-20 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
-      />
+        className="rounded-full object-cover w-12 h-12 sm:w-28 sm:h-28 filter group-hover:grayscale transition duration-300 ease-in-out"
+      >
+        <Image
+          src={urlFor(skill.image).url()}
+          alt="logo"
+          layout="fill"
+          objectFit="cover"
+        />
+      </motion.div>
     </div>
   );
 };

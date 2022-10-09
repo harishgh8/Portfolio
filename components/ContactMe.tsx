@@ -20,11 +20,11 @@ const ContactMe = (props: Props) => {
       <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
-      <div className="flex-col space-y-6">
-        <h4 className=" flex text-3xl md:text-4xl font-semibold justify-center">
+      <div className="flex-col space-y-2">
+        <h4 className=" flex text-2xl md:text-4xl font-semibold justify-center">
           I have got just what you need. Lets Talk
         </h4>
-        <div className="space-y-4">
+        <div className="space-y-3">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-5 w-5 animate-pulse" />
             <p className="text-1xl">+1234567890</p>
@@ -66,7 +66,7 @@ const ContactMe = (props: Props) => {
             className="contactInput"
             placeholder="Message"
           />
-          <button className="bg-[#F7AB0A] flex py-5 px-10 rounded-md text-black font-bold text-lg text-center w-auto">
+          <button className="bg-[#F7AB0A]  py-2 px-10 rounded-md text-black font-bold text-md text-center w-auto">
             Submit
           </button>
         </form>

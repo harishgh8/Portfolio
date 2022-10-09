@@ -62,7 +62,7 @@ const Projects = ({ projects }: Props) => {
                   <motion.img
                     key={tech._id}
                     className="h-8 w-8 "
-                    src={urlFor(tech.image).url()}
+                    src={urlFor(tech).url()}
                   />
                 ))}
               </div> */}

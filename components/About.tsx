@@ -49,13 +49,13 @@ const About = ({ pageInfo }: Props) => {
           alt="Picture of the author"
         />
       </motion.div>
-      <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold">
+      <div className="space-y-8 px-0 md:px-10">
+        {/* <h4 className="text-2xl md:text-4xl font-semibold">
           Here is a{" "}
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
-        </h4>
-        <p className="text-base">
+        </h4> */}
+        <p className=" text-sm">
           Hi I am Harish, an experienced Developer with diversified skills and
           high level of expertise in Front end application development.
           Confident, Self - learner, and quick to grasp new concepts, with a
@@ -63,8 +63,8 @@ const About = ({ pageInfo }: Props) => {
           implementing solutions. Well-versed with software engineering
           practices like Agile, versioning, code quality, release planning and
           CI/CD.
-          {/* {pageInfo?.backgroundInformation} */}
         </p>
+        {/* {pageInfo?.backgroundInformation} */}
       </div>
     </motion.div>
   );

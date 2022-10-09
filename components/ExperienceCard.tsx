@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Experience } from "../typings";
 import { urlFor } from "../sanity";
+import Image from "next/image";
+
 type Props = {
   experience: Experience;
 };
@@ -35,31 +37,22 @@ const ExperienceCard = ({ experience }: Props) => {
         <p className="uppercase mt-1text-2xl mt-1  text-gray-300">
           {new Date(experience.dateStarted).getFullYear()}
         </p>
-
-        <motion.div
-          initial={{
-            x: 300,
-            opacity: 0,
-          }}
-          transition={{
-            duration: 1.2,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-          }}
-          viewport={{ once: true }}
-          className="flex space-x-3 my-2 items-center"
-        >
+        <div className="flex space-x-3 justify-between">
           {experience.technologies.map((technology) => (
-            <motion.img
+            <div
               key={technology._id}
-              className="h-5 w-5 md:w-[30px] md:h-[30px] rounded-full"
-              src={urlFor(technology.image).url()}
-            />
+              className="flex flex- row space-x-3 my-2 items-center  justify-between"
+            >
+              <Image
+                key={technology._id}
+                width={25}
+                height={25}
+                src={urlFor(technology.image).url()}
+                alt=""
+              />
+            </div>
           ))}
-        </motion.div>
-
+        </div>
         <ul className="list-disc space-y-4 ml-5 text-sm  text-left text-gray-200">
           {experience.points.map((exp, i) => (
             <li key={i}> {exp}</li>
