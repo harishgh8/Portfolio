@@ -55,7 +55,7 @@ const About = ({ pageInfo }: Props) => {
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
         </h4> */}
-        <p className=" text-sm">
+        <p className=" text-sm sm:text-lg">
           Hi I am Harish, an experienced Developer with diversified skills and
           high level of expertise in Front end application development.
           Confident, Self - learner, and quick to grasp new concepts, with a
