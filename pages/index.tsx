@@ -56,10 +56,10 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
       </section>
 
       <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
+        <footer className="sticky bottom-3 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <motion.img
-              className="h-8 w-8 rounded-full filter grayscale hover:grayscale-0 cursor-pointer border border-[#242424]  hover:border-[#F7AB0A]/40"
+              className="h-6 w-6 rounded-full filter grayscale hover:grayscale-0 cursor-pointer border border-[#242424]  hover:border-[#F7AB0A]/40"
               src="https://www.transparentpng.com/thumb/home/FuK2u8-home-hd-photo-png.png"
               alt=""
             />

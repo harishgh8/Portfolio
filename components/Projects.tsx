@@ -50,7 +50,7 @@ const Projects = ({ projects }: Props) => {
               alt="project logo"
             />
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
+              <h4 className="text-2xl sm:text-3xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   Case Study {i + 1} of {projects.length}:
                 </span>
@@ -65,7 +65,7 @@ const Projects = ({ projects }: Props) => {
                   />
                 ))}
               </div>
-              <p className="text-lg text-center mf:text-center">
+              <p className="text-sm sm:text-1xl text-center mf:text-center">
                 {project.summary}
               </p>
             </div>
